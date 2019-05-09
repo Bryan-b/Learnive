@@ -1,0 +1,33 @@
+:root {
+
+    /* PATH */
+    --path: "http://localhost/learnlite";
+
+
+    /* COLORS */
+    --background-color: #fefefe;
+    --green: #73fa7c;
+    --yellow: #fada73;
+    --red: #fa5555;
+    --warm-red: #f57668;
+    --blue: #72b7ec;
+    --warm-blue: #589ED4;
+    --gary-card-shadow: #505050;
+    --gray-card-shadow-2: #afafaf;
+    --white: #FFF;
+    --off-white: #e7f0f6;
+    --off-white-2: #f9f9f9;
+    --off-white-3: #fcfcfc;
+    --gray: #F2F2F2;
+    --blank-gray: #E2E2E2;
+    --text-color: #565656;
+    --text-color-2: #808080;
+    --text-color-3: #ededed;
+    --box-shadows: #efefef;
+    --box-shadows-2: #d8d8d8;
+    --box-shadows-3: #b8b8b85e;
+    --footer-blue: #32495a;
+    --chrome-default: #f8f9fa;
+    --chrome-shadow: #dfe0e2;
+    --faded-border: #ffffff5e;
+}

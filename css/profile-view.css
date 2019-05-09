@@ -1,0 +1,14 @@
+@import "../css/variables.css";
+
+.profile-view-holder{
+    /* position: relative; */
+    display: inline-block;
+    width: 60%;
+    height:60%;
+    background-color: var(--white);
+    margin: 10px 0 0 0;
+    vertical-align: middle;
+    border:1px var(--warm-blue) solid;
+    border-radius:5px;
+
+}

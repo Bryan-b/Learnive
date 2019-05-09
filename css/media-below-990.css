@@ -1,0 +1,16 @@
+.slide-1 {
+    display: none;
+}
+
+.slide-2 {
+    display: flex;
+}
+
+.slide-holder {
+    width: 78%;
+}
+
+.course-container {
+    width: 80%;
+}
+

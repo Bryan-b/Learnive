@@ -1,0 +1,300 @@
+@import "../css/variables.css";
+
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: #F9F9F9;
+    box-shadow: 0px 0.2px 12px #e6e6e6;
+}
+
+.topbar {
+    position: relative;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+    background-color: #FFFFFF;
+    /* box-sizing: border-box; */
+    /* box-shadow: 0px 2px 7px #797979; */
+}
+
+.topbar>div {
+    height: 100%;
+}
+
+.topbar-left {
+    display: flex;
+
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    /* padding: 0 10px; */
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+    outline: none;
+}
+
+.topbar-left>div>a:link,
+a:visited {
+    padding: 5px 18px;
+    text-align: center;
+    font-family: 'Signika', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    color: #FFF;
+    background-color: var(--blue);
+    border-radius: 4px;
+    border: 1.2px var(--blue) solid;
+    /* transition: border .3s ease-in-out; */
+    transition: all .3s ease-in-out;
+}
+
+.topbar-left>div>a:hover,
+a:active {
+    background-color: #FFF;
+    color: var(--blue);
+    border: 1.2px var(--blue) solid;
+    /* transition: border .3s ease-in-out; */
+    transition: background-color .3s ease-in-out;
+}
+
+.cat {
+    background-color: #FFF;
+    color: var(--blue);
+}
+
+.cat:hover {
+    background-color: var(--blue);
+}
+
+.topbar-center {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.topbar-center>input {
+    position: relative;
+    height: 64%;
+    width: 60%;
+    border: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 15px;
+    padding-right: 45px;
+    color: var(--blue);
+    border-radius: 5px;
+    background-color: #f2f2f2;
+}
+
+.topbar-center>input:focus {
+    border: none;
+    outline: none;
+}
+
+.topbar-center>input:hover {
+    cursor: text;
+}
+
+.topbar-center>::-webkit-input-placeholder {
+    color: var(--blue);
+    font-size: 15px;
+    font-family: 'Signika', sans-serif;
+    font-weight: lighter;
+}
+
+.topbar-center>::-moz-placeholder,
+::-ms-placeholder {
+    color: var(--blue);
+    font-size: 15px;
+    font-family: 'Signika', sans-serif;
+    font-weight: lighter;
+}
+
+.topbar-center>input::placeholder {
+    color: var(--blue);
+    font-size: 15px;
+    font-family: 'Signika', sans-serif;
+    font-weight: lighter;
+}
+
+.topbar-center>::-ms-placeholder {
+    color: var(--blue);
+    -ms-font-size: 15px;
+    font-size: 15px;
+    -ms-font-family: 'Signika', sans-serif;
+    font-family: 'Signika', sans-serif;
+    -ms-font-weight: lighter;
+    font-weight: lighter;
+}
+
+.search-btn {
+    background-color: transparent;
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.search-btn:hover {
+    background-color: #e4e4e4;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.img-thumbnail {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    float: right;
+    border-radius: 50%;
+    border: 2px solid var(--blue);
+    /* box-shadow: 0px 3px 4px #727272; */
+}
+
+.img-thumbnail:hover {
+    cursor: pointer;
+}
+
+.bottombar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding: 0 50px;
+    background-color: deepskyblue;
+    background-image: url('../img/bar.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 3px 8px #bebebe;
+}
+
+.bottombar>div>span {
+    font-size: 40px;
+    font-family: 'Acme', sans-serif;
+    color: #FFF;
+
+}
+
+.bottombar>div>p {
+    font-size: 18px;
+    font-family: 'Signika', sans-serif;
+    color: #FFF;
+
+}
+
+/* Navigation Modal */
+
+.nav-modal {
+    display: none;
+    position: absolute;
+    height: auto;
+    right: 5px;
+    top: 58px;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 8px #dddddd;
+    border-radius: 4px;
+}
+
+.nav-modal>ul {
+    width: 130px;
+    text-decoration: none;
+    list-style-type: none;
+    -ms-list-style-type: none;
+    padding: 0;
+    margin: 0;
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.nav-modal>ul>li {
+    cursor: pointer;
+    /* color: #589ED4; */
+    font-size: 16px;
+    font-family: 'PT Sans', sans-serif;
+    transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -webkit-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+}
+
+.nav-modal>ul>li>a {
+    color: var(--blue);
+    text-align: center;
+    display: block;
+    padding: 7px 25px;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.nav-modal>ul>li>a:hover {
+    background-color: var(--blue);
+    color: #FFF;
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+
+}
+
+.nav-modal>ul>li>a:focus {
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+.current {
+    background-color: var(--red) !important;
+    color: #FFF !important;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-moz-scrollbar {
+    width: 6px;
+}
+
+::-o-scrollbar {
+    width: 6px;
+}
+
+::-ms-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--blue);
+    border-radius: 30px;
+}
+
+::-moz-scrollbar-thumb {
+    background-color: var(--blue);
+    border-radius: 30px;
+}
+
+::-o-scrollbar-thumb {
+    background-color: var(--blue);
+    border-radius: 30px;
+}
+
+::-ms-scrollbar-thumb {
+    background-color: var(--blue);
+    border-radius: 30px;
+}
